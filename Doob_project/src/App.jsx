@@ -11,6 +11,7 @@ import Check from "./component/Check";
 
 function App() {
   const location = useLocation();
+  
   useEffect(() => {
     AOS.init();
   }, []);
