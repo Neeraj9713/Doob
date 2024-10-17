@@ -1,5 +1,5 @@
 import React from "react";
-import panelImage from "../../../../public/panelImages/tabs-02.jpg";
+import panelImage from "../../../../public/upload/tabs-02.jpg";
 import CardAquire from "./CardAquire";
 import {useGetMainDataQuery } from "../../../store/features/apiMain";
 

@@ -27,6 +27,7 @@ function Check() {
     <div>
       {objdata ? ( // Check if objdata has been successfully loaded
         <>
+
           <p className="text-5xl text-green-800">{BannerText}</p>
           <p className="text-2xl">{BannerDescription}</p>
 
@@ -34,21 +35,10 @@ function Check() {
             <h2 className="text-4xl">{ServiceTopHighlight}</h2>
             <p>{ServiceDescription}</p>
           </div>
-
-          <div className="my-5">
-            <h2 className="text-4xl">{AquireTopHighLight}</h2>
-            <p>{AquireDescription}</p>
-          </div>
-
-          <div className="my-5">
-            <h2 className="text-4xl">{AdvanceTopHighlight}</h2>
-            <p>{AdvanceDescription}</p>
-          </div>
-
-          <div className="my-5">
-            <h2 className="text-4xl">{AwesomeTop}</h2>
-            <p>{AwesomeTitle}</p>
-          </div>
+          <form action="/upload" method="Post" encType="multipart/form-data">
+              <input type="file" name="image" />
+              <input type="submit" value="Upload File" />
+          </form>
         </>
       ) : (
         <div>No data available</div>
